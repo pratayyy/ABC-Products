@@ -37,7 +37,7 @@ public class DataLoadingServlet extends HttpServlet {
 	    response.addHeader("Access-Control-Max-Age", "1728000");
 
 		int start = Integer.parseInt(request.getParameter("start"));
-		int end = Integer.parseInt(request.getParameter("last"));
+		int end = Integer.parseInt(request.getParameter("end"));
 
 		PrintWriter out = response.getWriter();
 

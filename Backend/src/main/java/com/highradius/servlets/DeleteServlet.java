@@ -26,7 +26,7 @@ public class DeleteServlet extends HttpServlet {
 		invoiceDao = new InvoiceDaoImpl();
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.addHeader("Access-Control-Allow-Origin", "*");
 	    response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, HEAD");
 	    response.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
