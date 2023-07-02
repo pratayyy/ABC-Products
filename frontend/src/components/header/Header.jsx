@@ -1,6 +1,6 @@
 import React from "react";
-import abclogo from "../assets/abclogo.svg";
-import hrclogo from "../assets/hrclogo.svg";
+import abclogo from "../../assets/abclogo.svg";
+import hrclogo from "../../assets/hrclogo.svg";
 
 export default function Header() {
   const headerStyle = {
@@ -30,7 +30,7 @@ export default function Header() {
     color: "rgb(247, 52, 52)",
     fontFamily: "Roboto, sans-serif",
     fontSize: "24px",
-    fontWeight: "500",
+    fontWeight: "600",
   };
 
   return (

@@ -1,6 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header/Header";
+import Body from "./components/body/Body";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   const scrollbarStyle = {
@@ -35,6 +36,7 @@ export default function App() {
         `}
       </style>
       <Header />
+      <Body />
       <Footer />
     </>
   );
