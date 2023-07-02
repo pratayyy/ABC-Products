@@ -82,16 +82,16 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 5,
     },
     "& .MuiButton-root": {
-      color: "#666666",
+      color: "#fff",
       fontWeight: 600,
-      backgroundColor: "#8fd167",
+      backgroundColor: "#fc7500",
       boxShadow: "none",
       marginRight: "10px",
       transition: "0.3s ease",
 
       "&:hover": {
-        color: "#fff",
-        backgroundColor: "#0000CD",
+        color: "#fff !important",
+        backgroundColor: "#0000CD !important",
         boxShadow: "none",
       },
     },
@@ -115,6 +115,10 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  button: {
+    color: "#666666 !important",
+    backgroundColor: "#8fd167 !important",
+  },
 }));
 
 export default function BasicTabs() {
@@ -134,7 +138,7 @@ export default function BasicTabs() {
           variant="filled"
           fullWidth
         />
-        <Button variant="contained" color="primary">
+        <Button variant="contained" color="primary" className={classes.button}>
           Advanced search
         </Button>
       </div>
